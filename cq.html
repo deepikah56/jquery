@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#demo").click(function(){ 
+			$("#demo").toggleClass("red");
+		});
+		$("#class").click(function(){ 
+			$("#class").toggleClass("blue");
+		});
+		$("#pic").click(function(){ 
+			$("#pic").toggleClass("green");
+		});
+
+	});
+</script>
+<style>
+.red{
+	background-color:red;
+}
+.blue{
+	background-color: blue;
+}
+.green{
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<h1 id ="demo">red</h1>
+<h1 id ="class" >blue</h1>
+<h1 id ="pic">green</h1>
+</body>
+</html>
