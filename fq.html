@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){ 
+  $("#pic").hide(); 
+  $("button").click(function()
+  { 
+    if($("#demo1").val()=="" || $("#demo2").val()== "" || $("#demo3").val()=="" || $("#demo4").val()== "") 
+      { alert("please fill the form"); 
+    }
+    else
+      { 
+        $("#demo").hide(); 
+        $("#pic").show(); 
+        var firstname=$("#demo1").val(); 
+        $("#pic1").text(firstname); 
+        var lastname=$("#demo2").val(); 
+        $("#pic2").text(lastname); 
+        var email=$("#demo3").val(); 
+        $("#pic3").text(email); 
+        var adress=$("#demo4").val(); 
+        $("#pic4").text(adress); } 
+        }); 
+        }); 
+        </script> 
+        </head> 
+        <body> 
+        <div id="demo">
+         <label>First Name</label>
+         <input type="text" name="first Name" id="demo1"/> 
+         <label>Last Name</label>
+         <input type="text" name="last Name" id="demo2"/> 
+         <label>email</label>
+         <input type="text" name="email" id="demo3"/> 
+         <label>adress</label>
+         <input type="text" name="adress" id="demo4"/></br>
+          <button type="button">click</button> 
+          </div> 
+          <div id="pic" style="display:none"> 
+          <h1>firstname</h1>
+          <h3 id="pic1"></h3> 
+          <h1>lastname</h1>
+          <h3 id="pic2"></h3>
+           <h1>email</h1>
+           <h3 id="pic3"></h3> 
+           <h1>adress</h1>
+           <h3 id="pic4"></h3>
+           </div> 
+           </body>
